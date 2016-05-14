@@ -16,7 +16,6 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 1.9.3'
 
   s.add_dependency 'arbre',               '~> 1.0', '>= 1.0.2'
-  s.add_dependency 'bourbon'
   s.add_dependency 'formtastic',          '~> 3.1'
   s.add_dependency 'formtastic_i18n'
   s.add_dependency 'inherited_resources', '~> 1.6'
