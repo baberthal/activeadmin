@@ -8,6 +8,8 @@ module ActiveAdmin
 
       hook_for :users, default: "devise", desc: "Admin user generator to run. Skip with --skip-users"
 
+      hook_for :assets, hide: true
+
       source_root File.expand_path("../templates", __FILE__)
 
       def copy_initializer
@@ -34,7 +36,7 @@ module ActiveAdmin
       end
 
       def create_assets
-        generate "active_admin:assets"
+        # generate "active_admin:assets"
       end
 
       def create_migrations
