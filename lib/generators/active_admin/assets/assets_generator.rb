@@ -20,9 +20,9 @@ module ActiveAdmin
         asset_dir = File.expand_path('../../../../../app/assets', __FILE__)
         source_paths << asset_dir if File.directory? asset_dir
 
-        directory 'javascripts/active_admin'
-        directory 'images/active_admin'
-        directory 'stylesheets/active_admin'
+        directory 'javascripts/active_admin', 'app/assets/javascripts/active_admin'
+        directory 'images/active_admin', 'app/assets/images/active_admin'
+        directory 'stylesheets/active_admin', 'app/assets/stylesheets/active_admin'
       end
 
     end
